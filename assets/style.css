@@ -7,14 +7,14 @@
 
 html {
   font-size: 1vw;
-   background: #fff;
+   /* background: linear-gradient(5deg, #3c8df4 0%, #f7d79c 51%, #e688a3 85%); */
 }
 
 body{
   padding: 1rem;
   overflow-x: hidden;
-  display: grid;
-  /* background: linear-gradient(5deg, #3c8df4 0%, #f7d79c 51%, #e688a3 85%); */
+  /* display: grid; */
+
 }
 
 nav{
@@ -37,8 +37,8 @@ nav{
 
 p{
   font-family: 'RJMyth';
-  font-size: 1.5rem;
-  line-height: 1.8rem;
+  font-size: 2vw;
+  line-height: 2.2vw;
   color: black;
 }
 
@@ -49,14 +49,16 @@ a{
 
 .img-container{
   display: flex;
-    justify-content: center;
+  justify-content: center;
 }
+
 .solo-img{
-  width: 40vw;
+  width: 30vw;
+
 }
 
 .solo-img img{
-  width: 40vw;
+  width: 30vw;
 }
 
 .archivee{
@@ -84,7 +86,7 @@ a{
 }
 
 li:hover{
-  color: blue;
+  font-style: italic;
 }
 
 .dot{
@@ -133,6 +135,10 @@ img:hover + .caption{
   visibility: visible;
 }
 
+.heading:hover{
+    font-style: italic;
+}
+
 .about{
   visibility: hidden;
   bottom: 0;
@@ -179,15 +185,17 @@ a:hover + .about{
 }
 
 #year-a{
-  visibility: hidden;
+  display: none;
 }
 
 #year-b{
-  visibility: hidden;
+  /* visibility: hidden; */
+  display: none;
 }
 
 #year-c{
-  visibility: hidden;
+  display: none;
+  /* visibility: hidden; */
 }
 
 .m-fadeOut {
@@ -208,19 +216,22 @@ a:hover + .about{
 }
 
 .gallery:nth-of-type(1){
-  visibility: hidden;
+  /* visibility: hidden; */
   top: 0;
+  display: none;
 }
 
 .gallery:nth-of-type(2){
   position: absolute;
   top: 0;
   /* visibility: hidden; */
+  display: none;
 }
 
 .gallery:nth-of-type(3){
   position: absolute;
   top: 0;
+  display: none;
 }
 
 .gallery__img {
@@ -427,4 +438,23 @@ a:hover + .about{
     grid-column-end: 5;
     grid-row-start: 22;
     grid-row-end: 24;
+}
+
+@media only screen and (max-device-width: 600px) {
+
+/* body {
+  padding: 3vw;
+} */
+
+.solo-img{
+    width: 70vw;
+  }
+
+.solo-img img{
+    width: 70vw;
+}
+
+p{
+  font-size: 4vw;
+  line-height: 4.3vw;
 }

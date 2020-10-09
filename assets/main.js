@@ -10,28 +10,28 @@ $(document).ready(function() {
 
 function myFunction2019() {
   var x = document.getElementById("year-a");
-  if (x.style.visibility === "visible") {
-    x.style.visibility = "hidden";
+  if (x.style.display === "grid") {
+    x.style.display = "none";
   } else {
-    x.style.visibility = "visible";
+    x.style.display = "grid";
   }
 }
 
 function myFunction2018() {
   var y = document.getElementById("year-b");
-  if (y.style.visibility === "visible") {
-    y.style.visibility = "hidden";
+  if (y.style.display === "grid") {
+    y.style.display = "none";
   } else {
-    y.style.visibility = "visible";
+    y.style.display = "grid";
   }
 }
 
 function myFunction2017() {
   var z = document.getElementById("year-c");
-  if (z.style.visibility === "visible") {
-    z.style.visibility = "hidden";
+  if (z.style.display === "grid") {
+    z.style.display = "none";
   } else {
-    z.style.visibility = "visible";
+    z.style.display = "grid";
   }
 }
 
@@ -65,7 +65,8 @@ function myFunction2017() {
 //   })
 
 
-  var container = document.querySelector("#container");
+window.onload=function(){
+    var container = document.querySelector("#container");
      var activeItem = null;
 
      var active = false;
@@ -140,5 +141,4 @@ function myFunction2017() {
      function setTranslate(xPos, yPos, el) {
        el.style.transform = "translate3d(" + xPos + "px, " + yPos + "px, 0)";
      }
-
- });
+   }
