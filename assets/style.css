@@ -8,6 +8,7 @@
 html {
   font-size: 1vw;
    /* background: linear-gradient(5deg, #3c8df4 0%, #f7d79c 51%, #e688a3 85%); */
+
 }
 
 body{
@@ -68,7 +69,7 @@ a{
   position: fixed;
   top: 1;
   padding: 1vw;
-  padding-top: 0;
+  padding-top: 2.2vw;
   color: black;
   z-index: 1000;
   cursor: pointer;
@@ -129,6 +130,7 @@ img:hover + .caption{
 .heading{
   z-index: 1000;
   display: inline-block;
+  position: fixed;
 }
 
 .heading:hover ~ .about{
